@@ -46,30 +46,42 @@ export const storeData: StoreData = {
   ],
   products: [
     {
-      id: 'prod-1',
-      name: 'Vestidos Fluídos e Macacões',
-      description: 'Modelagens leves, estampas exclusivas e tecidos respiráveis perfeitos para o clima de Natal.',
-      price: 'A partir de R$ 189,90',
+      id: 'clothing-1',
+      name: 'Vestido Midi Fluido Aurora',
+      description: 'Confeccionado em crepe de seda de alto padrão, modelagem com caimento impecável e estampas exclusivas autorais.',
+      price: 'R$ 249,90',
       iconName: 'Shirt',
       imageUrl: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=600',
+      category: 'vestido',
+      tag: 'Coleção Sunset'
     },
     {
-      id: 'prod-2',
-      name: 'Alfaiataria Feminina Moderna',
-      description: 'Blazers estruturados, calças pantalonas e bermudas sociais com costura reforçada de alto padrão.',
-      price: 'A partir de R$ 220,00',
+      id: 'clothing-2',
+      name: 'Blazer Estruturado Atenas',
+      description: 'Linho misto de alto padrão com forro acetinado, lapelas clássicas e caimento slim moderno para dias corporativos.',
+      price: 'R$ 319,90',
       iconName: 'ShoppingBag',
       imageUrl: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&q=80&w=600',
+      category: 'alfaiataria',
+      tag: 'Destaque'
     },
     {
-      id: 'prod-3',
-      name: 'Acessórios e Bolsas Curadas',
-      description: 'Cintos de couro legítimo, semijoias exclusivas e bolsas de design autoral para complementar seu look.',
-      price: 'A partir de R$ 79,90',
-      iconName: 'Tag',
+      id: 'clothing-3',
+      name: 'Macacão Pantalona Linho Cru',
+      description: 'Rústico refinado com alças ajustáveis e botões frontais de madeira reflorestada. Fresco e atemporal.',
+      price: 'R$ 289,90',
+      iconName: 'Shirt',
       imageUrl: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600',
-    },
+      category: 'macacao',
+      tag: 'Leveza'
+    }
   ],
-  instagramUrl: 'https://instagram.com',
-  facebookUrl: 'https://facebook.com',
+  instagramUrl: 'https://www.instagram.com',
+  facebookUrl: 'https://www.facebook.com',
+  brands: [
+    { name: 'Nega Nina Atelier', desc: 'Design e modelagem autoral' },
+    { name: 'Lino Têxtil', desc: 'Linhos e sedas de alta costura' },
+    { name: 'Algodão Egípcio', desc: 'Matéria-prima premium' },
+    { name: 'Metais Bold', desc: 'Semijoias e aviamentos' }
+  ]
 };
