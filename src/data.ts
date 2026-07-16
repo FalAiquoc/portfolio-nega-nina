@@ -6,6 +6,7 @@ export const storeData: StoreData = {
   description: 'Coleções exclusivas que traduzem a sofisticação da mulher moderna com conforto e qualidade de tecidos premium. Venha se encantar com nosso showroom!',
   aboutText: 'A Nega Nina é mais do que uma loja de roupas; é um espaço de expressão de estilo e auto-estima feminina em Natal. Com uma curadoria minuciosa de tecidos nobres e modelagens impecáveis, oferecemos peças versáteis que acompanham a mulher contemporânea do trabalho aos momentos de lazer, sempre priorizando elegância e conforto.',
   aboutImage: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200',
+  logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD6r479L_D8r9t3523L2v-5sS-e4610992Lg&s',
   phone: '(84) 98800-0000',
   phoneFormatted: '84988000000',
   whatsappNumber: '5584988000000',

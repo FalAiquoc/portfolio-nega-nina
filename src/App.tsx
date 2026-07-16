@@ -2,20 +2,24 @@ import { useEffect, useState } from 'react';
 import { storeData } from './data';
 import { Icon } from './components/Icon';
 
-// Componente de Logotipo Vetorial Sofisticado (Monograma minimalista com N curvo estilizado sob círculo dourado de alta-costura)
+// Componente de Logotipo (Logo oficial por imagem ou Monograma de alta-costura SVG como fallback)
 function Logo({ className = "h-10", dark = false }: { className?: string; dark?: boolean }) {
   const primaryColor = '#be185d'; // Rosa Magenta
   const textColor = dark ? '#0F172A' : '#FFFFFF';
 
   return (
     <div className={`flex items-center space-x-2.5 ${className}`}>
-      <svg className="h-full aspect-square overflow-visible" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke={primaryColor} strokeWidth="10" strokeLinecap="round">
-          {/* Círculo oval de design e monograma N */}
-          <path d="M 60 40 L 60 160 L 140 40 L 140 160" strokeWidth="16" />
-          <circle cx="100" cy="100" r="85" stroke="#db2777" strokeWidth="6" strokeDasharray="10 6" />
-        </g>
-      </svg>
+      {storeData.logoUrl ? (
+        <img src={storeData.logoUrl} alt={storeData.name} className="h-8 w-auto object-contain rounded-md border border-pink-500/10" />
+      ) : (
+        <svg className="h-full aspect-square overflow-visible" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke={primaryColor} strokeWidth="10" strokeLinecap="round">
+            {/* Círculo oval de design e monograma N */}
+            <path d="M 60 40 L 60 160 L 140 40 L 140 160" strokeWidth="16" />
+            <circle cx="100" cy="100" r="85" stroke="#db2777" strokeWidth="6" strokeDasharray="10 6" />
+          </g>
+        </svg>
+      )}
       <div className="flex flex-col leading-[0.9] text-left font-display">
         <span className="text-xl font-black tracking-[0.1em] uppercase" style={{ color: textColor }}>NEGA</span>
         <span className="text-[14px] font-light italic tracking-[0.25em] text-[#be185d]">NINA</span>
